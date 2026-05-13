@@ -1,0 +1,53 @@
+# ==============================================================
+# DocuMind AI — Python Dependencies
+# ==============================================================
+# Pin exact versions for reproducibility in production.
+# Use `pip install -r requirements.txt` to install.
+# ==============================================================
+
+# --- Web Framework ---
+fastapi==0.111.0
+uvicorn[standard]==0.29.0         # ASGI server with websocket + hot reload support
+
+# --- Configuration ---
+pydantic==2.7.1                   # Data validation (FastAPI depends on this)
+pydantic-settings==2.2.1          # Load settings from .env files
+
+# --- PDF Processing ---
+PyMuPDF==1.24.3                   # fitz — fast PDF rendering + text extraction
+pdfplumber==0.11.0                # Table extraction + layout analysis
+
+# --- Image Preprocessing ---
+opencv-python-headless==4.9.0.80  # OpenCV without GUI (server-safe)
+Pillow==10.3.0                    # Image utilities used by many libraries
+
+# --- OCR ---
+paddlepaddle==2.6.2               # PaddleOCR backend (CPU version)
+paddleocr==2.7.3
+
+# Force numpy to 1.x due to OpenCV and PaddlePaddle ABI conflicts with NumPy 2.x
+numpy<2.0.0                  # PaddleOCR engine
+
+# --- Embeddings ---
+sentence-transformers==2.7.0      # SentenceTransformers (wraps HuggingFace)
+torch==2.3.0                      # PyTorch backend for SentenceTransformers
+
+# --- Vector Database & Search ---
+chromadb==0.5.0                   # ChromaDB — local persistent vector store
+rank_bm25==0.2.2                  # Sparse retrieval algorithm for hybrid search
+
+# --- LLM Integration ---
+httpx==0.27.0                     # Async HTTP client — used to call Ollama API
+
+# --- Database ---
+sqlalchemy==2.0.30                # ORM for SQLite
+aiosqlite==0.20.0                 # Async SQLite driver
+
+# --- File Handling ---
+python-multipart==0.0.9           # Required for FastAPI file uploads
+aiofiles==23.2.1                  # Async file I/O
+
+# --- Utilities ---
+python-dotenv==1.0.1              # Load .env files (backup to pydantic-settings)
+loguru==0.7.2                     # Structured logging with rotation + color
+tenacity==8.3.0                   # Retry logic for resilient API calls

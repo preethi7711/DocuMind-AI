@@ -1,0 +1,19 @@
+DEBUG: Using Database URL: sqlite+aiosqlite:///documind_v2.db
+[32m2026-05-13 21:42:50[0m | [33m[1mWARNING [0m | [36mbackend.utils.logger[0m:[36m_add_file_handler[0m:[36m53[0m | [33m[1mQueued logging unavailable; falling back to synchronous file logging for documind_{time:YYYY-MM-DD}.log[0m
+[32m2026-05-13 21:42:50[0m | [33m[1mWARNING [0m | [36mbackend.utils.logger[0m:[36m_add_file_handler[0m:[36m53[0m | [33m[1mQueued logging unavailable; falling back to synchronous file logging for errors_{time:YYYY-MM-DD}.log[0m
+[32m2026-05-13 21:42:50[0m | [1mINFO    [0m | [36mbackend.utils.logger[0m:[36msetup_logging[0m:[36m121[0m | [1mLogging initialized | environment=development | level=DEBUG[0m
+[32m2026-05-13 21:42:50[0m | [1mINFO    [0m | [36mbackend.app[0m:[36mlifespan[0m:[36m59[0m | [1mStarting DocuMind AI v0.1.0[0m
+[32m2026-05-13 21:42:50[0m | [1mINFO    [0m | [36mbackend.app[0m:[36mlifespan[0m:[36m60[0m | [1mEnvironment: development | Debug: False[0m
+[32m2026-05-13 21:42:50[0m | [1mINFO    [0m | [36mbackend.app[0m:[36mlifespan[0m:[36m67[0m | [1mDatabase tables initialized.[0m
+[32m2026-05-13 21:42:50[0m | [34m[1mDEBUG   [0m | [36mbackend.utils.file_utils[0m:[36mensure_directories[0m:[36m42[0m | [34m[1mDirectory ready: C:\Users\Preet\Documents\Projects\DocMind-AI\uploads[0m
+[32m2026-05-13 21:42:50[0m | [34m[1mDEBUG   [0m | [36mbackend.utils.file_utils[0m:[36mensure_directories[0m:[36m42[0m | [34m[1mDirectory ready: C:\Users\Preet\Documents\Projects\DocMind-AI\processed[0m
+[32m2026-05-13 21:42:50[0m | [34m[1mDEBUG   [0m | [36mbackend.utils.file_utils[0m:[36mensure_directories[0m:[36m42[0m | [34m[1mDirectory ready: C:\Users\Preet\Documents\Projects\DocMind-AI\chromadb[0m
+[32m2026-05-13 21:42:50[0m | [34m[1mDEBUG   [0m | [36mbackend.utils.file_utils[0m:[36mensure_directories[0m:[36m42[0m | [34m[1mDirectory ready: C:\Users\Preet\Documents\Projects\DocMind-AI\logs[0m
+[32m2026-05-13 21:42:50[0m | [34m[1mDEBUG   [0m | [36mbackend.utils.file_utils[0m:[36mensure_directories[0m:[36m42[0m | [34m[1mDirectory ready: C:\Users\Preet\Documents\Projects\DocMind-AI\uploads\raw[0m
+[32m2026-05-13 21:42:50[0m | [34m[1mDEBUG   [0m | [36mbackend.utils.file_utils[0m:[36mensure_directories[0m:[36m42[0m | [34m[1mDirectory ready: C:\Users\Preet\Documents\Projects\DocMind-AI\processed\images[0m
+[32m2026-05-13 21:42:50[0m | [34m[1mDEBUG   [0m | [36mbackend.utils.file_utils[0m:[36mensure_directories[0m:[36m42[0m | [34m[1mDirectory ready: C:\Users\Preet\Documents\Projects\DocMind-AI\processed\ocr[0m
+[32m2026-05-13 21:42:50[0m | [34m[1mDEBUG   [0m | [36mbackend.utils.file_utils[0m:[36mensure_directories[0m:[36m42[0m | [34m[1mDirectory ready: C:\Users\Preet\Documents\Projects\DocMind-AI\processed\structured[0m
+[32m2026-05-13 21:42:50[0m | [1mINFO    [0m | [36mbackend.utils.file_utils[0m:[36mensure_directories[0m:[36m44[0m | [1mAll runtime directories initialized (8 paths)[0m
+[32m2026-05-13 21:42:50[0m | [1mINFO    [0m | [36mbackend.app[0m:[36mlifespan[0m:[36m70[0m | [1mApplication startup complete. Ready to serve requests.[0m
+[32m2026-05-13 21:42:55[0m | [34m[1mDEBUG   [0m | [36mbackend.api.routes.health[0m:[36mhealth_check[0m:[36m104[0m | [34m[1mHealth check completed in 0.81ms | status=healthy[0m
+INFO:     127.0.0.1:54680 - "GET /api/v1/health HTTP/1.1" 200 OK

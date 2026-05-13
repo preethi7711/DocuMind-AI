@@ -1,0 +1,5 @@
+2026-05-13 21:42:50.349 | DEBUG    | backend.app:_register_routers:195 - Registered routers under prefix: /api/v1
+INFO:     Started server process [20504]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)

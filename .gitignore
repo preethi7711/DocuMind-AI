@@ -1,0 +1,63 @@
+# ==============================================================
+# DocuMind AI — Git Ignore
+# ==============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Environment
+.env
+*.env.local
+*.env.production
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Runtime directories (regenerated at startup)
+uploads/
+processed/
+logs/
+chromadb/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# ML Model caches (large binary files)
+.cache/
+*.pkl
+*.pt
+*.pth
+models/
+
+# PaddleOCR inference models
+inference/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Build
+*.pyc
+*.pyo
